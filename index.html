@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MR JNR - Catalogue multimarque.">
+  <title>MR JNR 💨 | Catalogue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">💨 MR <span>JNR</span></a>
+    <button id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+    <nav id="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#marques">Marques</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="accueil">
+      <p class="tag">MR JNR · CAMEROUN</p>
+      <h1>Bienvenue chez <span>MR JNR</span></h1>
+      <p>
+        Retrouve notre catalogue multimarque avec les références
+        JNR, RAZZ BAR et AL FAKHER.
+      </p>
+      <a class="btn" href="#catalogue">Découvrir le catalogue ↓</a>
+    </section>
+    <section class="section" id="catalogue">
+      <p class="tag">NOS RÉFÉRENCES</p>
+      <h2>Catalogue produits</h2>
+      <p class="description">
+        Recherche un modèle ou filtre les références par marque.
+        Les informations et disponibilités sont à confirmer.
+      </p>
+      <div class="filters">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Rechercher un modèle..."
+          aria-label="Rechercher un modèle"
+        >
+        <select id="brandFilter" aria-label="Filtrer par marque">
+          <option value="all">Toutes les marques</option>
+          <option value="JNR">JNR</option>
+          <option value="RAZZ BAR">RAZZ BAR</option>
+          <option value="AL FAKHER">AL FAKHER</option>
+        </select>
+      </div>
+      <p id="resultsInfo" aria-live="polite"></p>
+      <div id="productGrid" class="product-grid"></div>
+      <p id="emptyState" hidden>
+        Aucun résultat. Essaie une autre recherche.
+      </p>
+      <p class="disclaimer">
+        Catalogue indicatif. Les illustrations ne sont pas nécessairement
+        les photos officielles des produits. Les références, caractéristiques,
+        conformité et disponibilités doivent être vérifiées auprès des fabricants
+        ou fournisseurs.
+      </p>
+    </section>
+    <section class="section brands" id="marques">
+      <p class="tag">NOS MARQUES</p>
+      <h2>Trois univers</h2>
+      <div class="brand-grid">
+        <article class="brand-card">
+          <span>01</span>
+          <h3>JNR</h3>
+          <p>Consulte les références répertoriées de la marque.</p>
+          <a href="https://jnrofficial.com/products/"
+             target="_blank" rel="noopener">
+            Site fabricant ↗
+          </a>
+        </article>
+        <article class="brand-card dark">
+          <span>02</span>
+          <h3>RAZZ BAR</h3>
+          <p>Références à vérifier auprès du fournisseur.</p>
+        </article>
+        <article class="brand-card purple">
+          <span>03</span>
+          <h3>AL FAKHER</h3>
+          <p>Consulte les informations officielles de la marque.</p>
+          <a href="https://www.alfakher.com/"
+             target="_blank" rel="noopener">
+            Site officiel ↗
+          </a>
+        </article>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
+      <p class="tag">CONTACT</p>
+      <h2>MR JNR 💨</h2>
+      <p>
+        Pour une question sur une référence, contacte-nous directement.
+      </p>
+      <a class="btn"
+         href="https://wa.me/33674029600"
+         target="_blank" rel="noopener">
+        Contacter sur WhatsApp
+      </a>
+      <a class="btn secondary"
+         href="mailto:puffgrossistes85@gmail.com">
+        Envoyer un e-mail
+      </a>
+    </section>
+  </main>
+  <footer>
+    <a href="#" class="logo">💨 MR <span>JNR</span></a>
+    <p>© <span id="year"></span> MR JNR</p>
+    <p>Catalogue indicatif · Cameroun</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
