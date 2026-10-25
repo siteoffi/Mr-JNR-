@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <meta name="description" content="MR JNR — Présentation des marques JNR, Razzbar et Al Fakher au Cameroun.">
+  <title>MR JNR | Catalogue officiel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="#accueil">MR <span>JNR</span></a>
+
+    <button id="menuButton" class="menu-button"
+      aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+    <nav id="navigation">
+      <a href="#accueil">Accueil</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">BIENVENUE CHEZ MR JNR</span>
+        <h1>Le style<br><span>à votre image.</span></h1>
+        <p>
+          Découvrez notre espace de présentation consacré aux marques
+          JNR, Razzbar et Al Fakher.
+        </p>
+        <a class="button" href="#catalogue">Explorer les marques</a>
+        <p class="small-note">
+          Catalogue informatif — aucune commande ni aucun paiement sur ce site.
+        </p>
+      </div>
+      <div class="hero-decoration">
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+        <div class="hero-logo">MR<br><span>JNR</span></div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <strong>Information de sécurité</strong>
+      <p>
+        Les produits de vapotage peuvent contenir de la nicotine,
+        une substance addictive. Ils ne sont pas destinés aux mineurs
+        ni aux non-fumeurs. Les informations réglementaires doivent être
+        vérifiées avant toute commercialisation.
+      </p>
+    </section>
+
+    <section id="catalogue" class="section">
+      <div class="section-heading">
+        <span class="eyebrow">NOS MARQUES</span>
+        <h2>Notre catalogue</h2>
+        <p>Choisissez une marque pour afficher sa présentation.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-brand="Tous">Toutes</button>
+        <button class="filter" data-brand="JNR">JNR</button>
+        <button class="filter" data-brand="Razzbar">Razzbar</button>
+        <button class="filter" data-brand="Al Fakher">Al Fakher</button>
+      </div>
+
+      <div class="search-wrap">
+        <label for="search">Rechercher une marque</label>
+        <input id="search" type="search"
+          placeholder="Tape le nom d'une marque..." autocomplete="off">
+      </div>
+
+      <div id="products" class="products" aria-live="polite"></div>
+      <p id="empty" class="empty" hidden>Aucun résultat trouvé.</p>
+    </section>
+
+    <section id="apropos" class="about">
+      <div class="about-content">
+        <span class="eyebrow">NOTRE IDENTITÉ</span>
+        <h2>Bienvenue dans l'univers MR JNR</h2>
+        <p>
+          MR JNR est un projet de présentation de marques et de gammes.
+          Notre interface est pensée pour être simple, élégante et
+          agréable à consulter sur téléphone comme sur ordinateur.
+        </p>
+        <p>
+          Les références, compositions, disponibilités et autorisations
+          des produits doivent être confirmées auprès des fabricants
+          et des autorités compétentes.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <span class="eyebrow">RESTONS EN CONTACT</span>
+        <h2>Contact MR JNR</h2>
+        <p>Pour les questions générales concernant notre site.</p>
+      </div>
+
+      <div class="contact-grid">
+        <article class="contact-card">
+          <div class="contact-icon">✉</div>
+          <h3>Par e-mail</h3>
+          <p>Écris-nous à notre adresse de contact.</p>
+          <a class="button" href="mailto:mrjnr45@gmail.com">
+            Envoyer un e-mail
+          </a>
+          <p class="contact-detail">mrjnr45@gmail.com</p>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-icon">◉</div>
+          <h3>WhatsApp</h3>
+          <p>Contacte-nous pour une question générale.</p>
+          <a class="button whatsapp"
+            href="https://wa.me/33674029600"
+            target="_blank" rel="noopener noreferrer">
+            Ouvrir WhatsApp
+          </a>
+          <p class="contact-detail">+33 6 74 02 96 00</p>
+        </article>
+      </div>
+
+      <p class="small-note">
+        Ces moyens de contact ne constituent pas un système de commande.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#accueil">MR <span>JNR</span></a>
+    <p>Catalogue informatif · Cameroun</p>
+    <p>© <span id="year"></span> MR JNR. Tous droits réservés.</p>
+  </footer>
+
+  <div id="ageGate" class="age-gate"
+    role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+    <div class="age-card">
+      <a class="logo" href="#accueil">MR <span>JNR</span></a>
+      <h2 id="ageTitle">Accès réservé aux adultes</h2>
+      <p>
+        Ce site présente des informations sur des produits de vapotage.
+        Confirme que tu as au moins 18 ans pour continuer.
+      </p>
+      <button id="ageYes" class="button full-button">
+        J'ai 18 ans ou plus
+      </button>
+      <button id="ageNo" class="secondary full-button">
+        Je suis mineur
+      </button>
+      <p class="small-note">
+        Cette déclaration ne vérifie pas l'identité du visiteur.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
